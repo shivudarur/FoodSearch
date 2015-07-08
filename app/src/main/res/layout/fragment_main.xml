@@ -1,0 +1,10 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_food_details_tl_portion_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="center"
+    android:layoutAnimation="@anim/layout_animation_row_down_slide"
+    android:orientation="vertical" >
+
+</TableLayout>

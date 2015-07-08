@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+ 
+    <com.holmusk.foodsearch.views.TextViewCustomFont
+        android:id="@+id/sub_portion_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_weight="1"
+        android:paddingBottom="5dp"
+        android:textColor="@color/light_green"
+        android:layout_margin="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+ <ImageView
+        android:id="@+id/portion_imgView_arrow_right"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/right_arrow" />
+</LinearLayout>

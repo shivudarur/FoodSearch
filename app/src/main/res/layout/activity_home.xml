@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomeActivity" >
+
+    <AutoCompleteTextView
+        android:id="@+id/activity_home_ac_food_items"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="24dp"
+        android:drawableRight="@android:drawable/presence_offline"
+        android:ems="10" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <LinearLayout
+        android:id="@+id/activity_home_ll_portions_section"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_home_ac_food_items"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/activity_home_tv_portions_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_sbri_goals_rl_overview"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/light_grey"
+            android:padding="10dp"
+            android:text="Portions"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ExpandableListView
+            android:id="@+id/activity_home_elv_portions"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:transcriptMode="alwaysScroll" />
+    </LinearLayout>
+
+</RelativeLayout>
